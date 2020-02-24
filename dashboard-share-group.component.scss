@@ -1,0 +1,17 @@
+:host {
+  form {
+    width: 100%;
+  }
+  .mat-form-field {
+    width: 80%;
+
+    &:first-of-type {}
+    margin-bottom: 20px;
+  }
+  .mat-field-input {
+    width: 80%
+  }
+  textarea {
+    width: 100%;
+  }
+}

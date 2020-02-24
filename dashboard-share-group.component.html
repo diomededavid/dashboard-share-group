@@ -1,0 +1,20 @@
+<h1 class="mat-h1">Share Group</h1>
+<div class="light-theme">
+  <h4 class="mat-h4">Copy Link</h4>
+  <form>
+    <mat-form-field>
+      <input matInput value="https://trackithub.com/pickleball-bob" #userInput>
+    </mat-form-field>
+    <button mat-mini-fab color="primary" (click)="copyInputMessage(userInput)" type="button">
+      <mat-icon>file_copy</mat-icon>
+    </button>
+  </form>
+  <h4 class="mat-h4">Email Link to Friends</h4>
+  <form>
+    <mat-form-field>
+      <textarea matInput placeholder="Enter Email Addresses"></textarea>
+    </mat-form-field>
+    <button  mat-stroked-button color="primary" type="button" [mat-dialog-close]="sendLinkCancel" #sendLinkCancel >Cancel</button>
+    <button mat-raised-button  color="primary" style="float: right" type="button"  [mat-dialog-close]="sendLink" #sendLink>Send</button>
+  </form>
+</div>
